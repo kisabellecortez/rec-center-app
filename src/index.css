@@ -5,8 +5,38 @@ html, body{
     overflow-x: hidden; 
 }
 
-/* sign-in page */
-.sign-in{ 
+/* top nav */
+.nav{
+    display: flex; 
+    align-items: center; 
+    height: 8vh; 
+    background-color: #F6F4D2;  
+    padding: 0 2vh 0 2vh;
+    position: relative; 
+}
+
+.nav .menu{
+    height: 5vh; 
+    margin: 2vh 0 2vh 0; 
+    float: left; 
+}
+
+.nav .logo{
+    position: relative; 
+    height: 6vh; 
+    margin: auto; 
+    margin-top: 1vh; 
+    margin-bottom: 1vh; 
+}
+
+.nav .user{
+    height: 4vh; 
+    margin: 2vh 0 2vh 0; 
+    float: right; 
+}
+
+/* sign-in, sign-up page */
+.sign-in, .sign-up{ 
     display: flex;
     height: 100vh; 
     width: 100%; 
@@ -20,3 +50,120 @@ html, body{
     width: 70vh; 
     background-color: #fff; 
 }
+
+/* sidebar */
+.menu.open > main{
+    margin-left: 260px; 
+  }
+  
+  .menu.open > .sidebar{
+    width: 260px; 
+  
+  }
+  
+  .sidebar{
+    z-index: 3; 
+    margin-top: 45px; 
+    width: 0px; 
+    flex-shrink: 0; 
+    background-color: #F6F4D2; 
+    height: 100vh; 
+    overflow: auto; 
+    position: fixed; 
+    transition: width 0.5s ease-in-out; 
+    left: 0; 
+  
+  }
+  
+  .sidebar-item{
+    position: relative;
+    display: block;
+    padding: 1em; 
+    font-size: 1.1em;
+    cursor: pointer; 
+    text-decoration: none; 
+  
+  }
+  
+  .sidebar-title{
+    white-space: nowrap;
+    display: flex; 
+    justify-content: space-between;
+    font-size: 25px; 
+    vertical-align: middle; 
+    color: #A44A3F;
+    font-family: Impact, fantasy; 
+    letter-spacing: 1px; 
+  
+  }
+  
+  .sidebar-title .toggle-btn{ 
+    width: 20px; 
+    cursor: pointer;
+    transition: transform .3s; 
+  }
+  
+  .sidebar-item.open .sidebar-title .toggle-btn{
+    transform: rotate(-180deg)
+  }
+  
+  .sidebar-content{ 
+    white-space: nowrap;
+    padding-top: 10px; 
+    font-family: Impact, fantasy;
+    color: #CBDFBD;
+    height: 0; 
+    overflow: hidden;
+  
+  }
+  
+  .sidebar-item.open > .sidebar-content{
+    height: auto; 
+    
+  }
+  
+  .btn-container{
+    z-index: 2; 
+    display: inline-block; 
+    width: 35px; 
+    height: 35px;
+    margin: 1vh; 
+    perspective: 800px; 
+    vertical-align: auto;
+    transition: 0.2s ease;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+  }
+  
+  .btn-container.open > .sidebar{
+    width: 260px; 
+  }
+  
+  .btn-container:active > .btn-card{
+    cursor: pointer; 
+    transform: rotateY(180deg);
+  
+  }
+  
+  .btn-card{
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    transition: transform 1500ms; 
+    transform-style: preserve-3d; 
+  
+  }
+  
+  .open-btn{
+    height: 4vh; 
+  }
+  
+  .close-btn{
+    
+  }
+
+/* home page */
+
+
+

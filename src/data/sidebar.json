@@ -1,0 +1,35 @@
+[
+    {   
+        "title": "HOME", 
+        "path": "/home"
+
+    },
+    {
+        "title": "PROGRAMS", 
+        "path": "/programs",
+        "childrens": [
+            {
+                "title": "LESSONS",
+                "path": "/programs/lessons"
+            },
+            {
+                "title": "CAMPS", 
+                "path": "/programs/camps"
+            }, 
+            {
+                "title": "ACADEMIC ", 
+                "path": "/shop/academic"
+            }
+        ]
+    },
+    {
+        "title": "BOOKING", 
+        "path": "/booking"
+
+    },
+    {
+        "title": "MEMBERSHIPS", 
+        "path": "/memberships"
+
+    }
+]
