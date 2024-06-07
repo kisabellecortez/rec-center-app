@@ -10,6 +10,7 @@ const SignUp = () => {
 
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
+    const [bday, setBday] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confPass, setConfPass] = useState('')
@@ -26,54 +27,76 @@ const SignUp = () => {
 
     return(
         <div className="sign-in">
+
             <div className="card">
-                <h1>Sign Up</h1>
-                <TextField
-                    required
-                    value={firstName}
-                    id="firstName"
-                    label="First Name"
-                    type="text"
-                    onChange={(e) => setFirstName(e.target.value)}
-                />
+                
+                <div>
+                    <h1>Sign Up</h1>
+                    <TextField
+                        required
+                        value={firstName}
+                        id="firstName"
+                        label="First Name"
+                        type="text"
+                        onChange={(e) => setFirstName(e.target.value)}
+                    />
 
-                <TextField
-                    required
-                    value={lastName}
-                    id="lastName"
-                    label="Last Name"
-                    type="text"
-                    onChange={(e) => setLastName(e.target.value)}
-                />
+                    <TextField
+                        required
+                        value={lastName}
+                        id="lastName"
+                        label="Last Name"
+                        type="text"
+                        onChange={(e) => setLastName(e.target.value)}
+                    />
+                </div>
 
-                <TextField
-                    required
-                    value={email}
-                    id="email"
-                    label="Email"
-                    type="email"
-                    onChange={(e) => setEmail(e.target.value)}
-                />
+                <div>
+                    <TextField
+                        required
+                        value={bday}
+                        id="date"
+                        label="Birthday"
+                        type="date"
+                        InputLabelProps={{
+                            shrink: true,
+                        }}
+                        onChange={(e) => setBday(e.target.value)}
+                    />
+                </div>
 
-                <TextField
-                    required
-                    value={password}
-                    id="password"
-                    label="Password"
-                    type="password"
-                    onChange={(e) => setPassword(e.target.value)}
-                />
+                <div>
+                    <TextField
+                        required
+                        value={email}
+                        id="email"
+                        label="Email"
+                        type="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                </div>
 
-                <TextField
-                    required
-                    value={confPass}
-                    id="confPass"
-                    label="Confirm Password"
-                    type="password"
-                    onChange={(e) => setConfPass(e.target.value)}
-                />
+                <div>
+                    <TextField
+                        required
+                        value={password}
+                        id="password"
+                        label="Password"
+                        type="password"
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
 
-                <Button onClick={handleSignUp} variant="contained">Sign In</Button>
+                    <TextField
+                        required
+                        value={confPass}
+                        id="confPass"
+                        label="Confirm Password"
+                        type="password"
+                        onChange={(e) => setConfPass(e.target.value)}
+                    />
+                </div>
+
+                <Button onClick={handleSignUp} variant="contained">Sign Up</Button>
 
                 <p>Already have an account? Sign in <a href='/sign-in'>here</a>!</p>
             </div>

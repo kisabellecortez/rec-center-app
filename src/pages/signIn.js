@@ -25,23 +25,28 @@ const SignIn = () => {
         <div className="sign-in">
             <div className="card">
                 <h1>Sign In</h1>
-                <TextField
-                    required
-                    value={email}
-                    id="email"
-                    label="Email"
-                    type="email"
-                    onChange={(e) => setEmail(e.target.value)}
-                />
 
-                <TextField
-                    required
-                    value={password}
-                    id="password"
-                    label="Password"
-                    type="password"
-                    onChange={(e) => setPassword(e.target.value)}
-                />
+                <div>
+                    <TextField
+                        required
+                        value={email}
+                        id="email"
+                        label="Email"
+                        type="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                </div>
+
+                <div>
+                    <TextField
+                        required
+                        value={password}
+                        id="password"
+                        label="Password"
+                        type="password"
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </div>
 
                 <Button onClick={handleSignIn} variant="contained">Sign In</Button>
 

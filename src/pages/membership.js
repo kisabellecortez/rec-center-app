@@ -7,6 +7,10 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 
+const handleYouthMem = async() => {
+    
+}
+
 const Membership = () => {
     return(
         <div className="membership">
@@ -40,7 +44,7 @@ const Membership = () => {
                         </CardContent>
                         <CardActions>
                             <Button variant="contained" color="success">
-                            SIGN UP
+                            GET
                             </Button>
                         </CardActions>
                     </Card>
