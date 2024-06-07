@@ -35,12 +35,14 @@ const Membership = () => {
                 </div>
             </div>  
 
-            <div className='membership-card'>
-                <div>
-                    <Card sx={{ minWidth: 275, maxWidth: 275, minHeight: 250, maxHeight: 250 }}>
+            <div className='membership-card-section'>
+
+                <div className='membership-card'>
+                    <Card sx={{ minWidth: 275, maxWidth: 275, minHeight: 275, maxHeight: 275 }}>
                         <CardContent>
                             <h2>YOUTH</h2>
-                            <h4>Must be below 18 (youth 12 or under require parental guidance when using our facilities)</h4>
+                            <h3>FREE</h3>
+                            <p>Must be below 18 (youth 12 or under require parental guidance when using our facilities)</p>
                         </CardContent>
                         <CardActions>
                             <Button variant="contained" color="success">
@@ -50,11 +52,17 @@ const Membership = () => {
                     </Card>
                 </div>
 
-                <div>
-                    <Card sx={{ minWidth: 275, maxWidth: 275, minHeight: 250, maxHeight: 250 }}>
+                <div className='membership-card'>
+                    <Card sx={{ minWidth: 275, maxWidth: 275, minHeight: 275, maxHeight: 275 }}>
                         <CardContent>
                             <h2>STUDENT</h2>
-                            <h4>Must be 18+ with a valid student ID</h4>
+
+                            <div className='price'>
+                                <h3>$20</h3> 
+                                <h4>/month</h4>
+                            </div>
+
+                            <p>Must be 18+ with a valid student ID</p>
                         </CardContent>
                         <CardActions>
                             <Button variant="contained" color="success">
@@ -64,11 +72,17 @@ const Membership = () => {
                     </Card>
                 </div>
 
-                <div>
-                    <Card sx={{ minWidth: 275, maxWidth: 275, minHeight: 250, maxHeight: 250 }}>
+                <div className='membership-card'>
+                    <Card sx={{ minWidth: 275, maxWidth: 275, minHeight: 275, maxHeight: 275 }}>
                         <CardContent>
                             <h2>ADULT</h2>
-                            <h4>Must be 18+</h4>
+
+                            <div className='price'>
+                                <h3>$30</h3> 
+                                <h4>/month</h4>
+                            </div>
+
+                            <p>Must be 18+</p>
                         </CardContent>
                         <CardActions>
                             <Button variant="contained" color="success">
@@ -78,11 +92,17 @@ const Membership = () => {
                     </Card>
                 </div>
 
-                <div>
-                    <Card sx={{ minWidth: 275, maxWidth: 275, minHeight: 250, maxHeight: 250 }}>
+                <div className='membership-card'>
+                    <Card sx={{ minWidth: 275, maxWidth: 275, minHeight: 275, maxHeight: 275 }}>
                         <CardContent>
                             <h2>SENIOR</h2>
-                            <h4>Must 65+ years young</h4>
+
+                            <div className='price'>
+                                <h3>$25</h3> 
+                                <h4>/month</h4>
+                            </div>
+
+                            <p>Must 65+ years young</p>
                         </CardContent>
                         <CardActions>
                             <Button variant="contained" color="success">

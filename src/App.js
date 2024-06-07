@@ -6,6 +6,7 @@ import SignIn from './pages/signIn.js'
 import SignUp from './pages/signUp.js'
 import Home from './pages/home.js'
 import Membership from './pages/membership.js'
+import ProgramsLessons from './pages/programsLessons.js'
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
             <Route
               path="/memberships"
               element={<Membership/>}
+            />
+
+            <Route
+              path="/programs/lessons"
+              element={<ProgramsLessons/>}
             />
 
           </Routes>

@@ -170,16 +170,25 @@ html, body{
 /* home page */
 
 /* memberships */
-.membership{
+.membership, .programs-lessons{
   width: 100%; 
-  height: 100vh; 
+  height: 500vh; 
 }
 
-.membership-card{
+.membership-card-section{
   display: flex; 
   flex-wrap: wrap; 
   justify-content: center; 
   gap: 5vh; 
+}
+
+.membership-card .price{
+  display: flex; 
+  align-items: baseline; 
+}
+
+.membership-card .price h3{
+  margin-right: 0.5vh; 
 }
 
 .perks-card{
@@ -201,6 +210,17 @@ html, body{
 }
 
 .perks-card p{
+  display: inline-block; 
+}
+
+/* programs - lessons */
+.description{ 
+  width: 50%; 
+  display: inline-block; 
+  vertical-align: top; 
+}
+
+.photos{
   display: inline-block; 
 }
 
