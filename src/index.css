@@ -165,5 +165,41 @@ html, body{
 
 /* home page */
 
+/* memberships */
+.membership{
+  width: 100%; 
+  height: 100vh; 
+}
+
+.membership-card{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 5vh; 
+}
+
+.perks-card{
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin-bottom: 1vh; 
+}
+
+.perks-card > div{
+  display: flex; 
+  align-items: center; 
+}
+
+.perks-card img{
+  height: 4vh; 
+  display: inline-block; 
+  margin-right: 1vh; 
+}
+
+.perks-card p{
+  display: inline-block; 
+}
+
+
 
 

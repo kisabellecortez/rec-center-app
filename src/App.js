@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import SignIn from './pages/signIn.js'
 import SignUp from './pages/signUp.js'
 import Home from './pages/home.js'
+import Membership from './pages/membership.js'
 
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
             <Route
               path="/home"
               element={<Home/>}
+            />
+
+            <Route
+              path="/memberships"
+              element={<Membership/>}
             />
 
           </Routes>
