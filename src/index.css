@@ -1,8 +1,9 @@
 html, body{
-    margin: 0; 
-    width: 100%; 
-    overflow-y: auto; 
-    overflow-x: hidden; 
+  margin: 0; 
+  width: 100%; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  background-color: #F4F8F1;
 }
 
 /* top nav */
@@ -10,7 +11,7 @@ html, body{
     display: flex; 
     align-items: center; 
     height: 8vh; 
-    background-color: #F6F4D2;  
+    background-color: #CBDFBD;  
     padding: 0 2vh 0 2vh;
     position: relative; 
 }
@@ -40,19 +41,13 @@ html, body{
     display: flex;
     height: 100vh; 
     width: 100%; 
-    background-color: red;
+    background-color: #CBDFBD;
     justify-content: center; 
     align-items: center; 
 }
 
-.card{
-    height: 75%; 
-    width: 70vh; 
-    background-color: #fff; 
-}
-
-.card div{
-  margin: 0.5vh 0.25vh 0.5vh 0.25vh; 
+.form-field{
+  margin: 2vh 0 2vh 0; 
 }
 
 /* sidebar */
@@ -70,7 +65,7 @@ html, body{
     margin-top: 45px; 
     width: 0px; 
     flex-shrink: 0; 
-    background-color: #F6F4D2; 
+    background-color: #CBDFBD; 
     height: 100vh; 
     overflow: auto; 
     position: fixed; 
