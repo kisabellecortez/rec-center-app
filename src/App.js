@@ -7,6 +7,7 @@ import SignUp from './pages/signUp.js'
 import Home from './pages/home.js'
 import Membership from './pages/membership.js'
 import ProgramsLessons from './pages/programsLessons.js'
+import Account from './pages/account.js'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <AuthContextProvider>
         <BrowserRouter>
           <Routes>
-            <Route index element={<SignIn/>}/>
+            <Route index element={<Home/>}/>
             <Route
               path="/sign-in"
               element={<SignIn/>}
@@ -38,6 +39,11 @@ function App() {
             <Route
               path="/programs/lessons"
               element={<ProgramsLessons/>}
+            />
+
+            <Route
+              path="/account"
+              element={<Account/>}
             />
 
           </Routes>

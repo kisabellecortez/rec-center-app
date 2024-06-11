@@ -6,8 +6,16 @@ export default function TopNav(){
     return(
         <div className="nav">
             <Sidebar/>
-            <img className='logo' src={logo}></img>
-            <img className='user' src={user}></img>
+
+            <div className='logo-div'>
+                <img className='logo' src={logo} alt='Scarbs Rec logo'></img>
+            </div>
+            
+            <div className='user-div'>
+                <a href='/account'>
+                    <img className='user' src={user} alt='User icon'></img>
+                </a>
+            </div>
         </div>
     )
 }

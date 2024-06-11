@@ -22,18 +22,24 @@ html, body{
     float: left; 
 }
 
+.nav .logo-div{
+  position: relative; 
+  margin: auto; 
+  margin-top: 1vh; 
+  margin-bottom: 1vh; 
+}
+
 .nav .logo{
-    position: relative; 
-    height: 6vh; 
-    margin: auto; 
-    margin-top: 1vh; 
-    margin-bottom: 1vh; 
+  height: 4.5vh; 
+}
+
+.nav .user-div{
+  margin: 2vh 0 2vh 0; 
+  float: right; 
 }
 
 .nav .user{
-    height: 4vh; 
-    margin: 2vh 0 2vh 0; 
-    float: right; 
+    height: 4vh;  
 }
 
 /* sign-in, sign-up page */

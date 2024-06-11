@@ -14,9 +14,9 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Popover from '@mui/material/Popover';
 
 function srcset(image, size, rows = 1, cols = 1) {
     return {
@@ -31,6 +31,7 @@ const ProgramsLessons = () => {
   const [type, setType] = useState('')
   const [ages, setAges] = useState('')
   const [level, setLevel] = useState('')
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleChangeType = (event) => {
     setType(event.target.value)
@@ -43,6 +44,17 @@ const ProgramsLessons = () => {
   const handleChangeLevel = (event) => {
     setLevel(event.target.value)
   }
+
+  const handlePopover = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handlePopoverClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
 
     return(
         <div className="programs-lessons">
@@ -153,8 +165,8 @@ const ProgramsLessons = () => {
             </div>
 
             <div className="lesson-card-section">
-                {lessonsList.map((lesson) => (
-                    <div key={lesson.id} className='lesson-card'>
+                {lessonsList.map((lesson, index) => (
+                    <div key={index} className='lesson-card'>
                         <Card sx={{ minWidth: 800, maxWidth: 800, minHeight: 400, maxHeight: 400 }}>
                             <CardContent>
                                 <h2>{lesson.title}</h2>
@@ -178,9 +190,25 @@ const ProgramsLessons = () => {
                                 REGISTER
                                 </Button>
 
-                                <Button >SCHEDULE</Button>
+                                <Button onClick={handlePopover}>SCHEDULE</Button>
                             </CardActions>
                         </Card>
+
+                        <Popover
+                          id={id}
+                          open={open}
+                          anchorEl={anchorEl}
+                          onClose={handlePopoverClose}
+                          anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'left',
+                          }}
+                        >
+                          SCHEDULE
+                          <p>{lesson.time}</p>
+                          <p>{lesson.schedule}</p>
+                         
+                        </Popover>
                     </div>
                 ))}
                 

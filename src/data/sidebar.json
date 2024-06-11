@@ -31,5 +31,9 @@
         "title": "MEMBERSHIPS", 
         "path": "/memberships"
 
+    },
+    {
+        "title": "LOGOUT", 
+        "path": "/home"
     }
 ]
