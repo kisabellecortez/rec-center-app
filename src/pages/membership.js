@@ -58,16 +58,16 @@ const Membership = () => {
                             <h2>STUDENT</h2>
 
                             <div className='price'>
-                                <h3>$20</h3> 
+                                <h3>$25.99</h3> 
                                 <h4>/month</h4>
                             </div>
 
                             <p>Must be 18+ with a valid student ID</p>
                         </CardContent>
                         <CardActions>
-                            <Button variant="contained" color="success">
-                            BUY
-                            </Button>
+                                <Button variant="contained" color="success">
+                                BUY
+                                </Button>
                         </CardActions>
                     </Card>
                 </div>
@@ -78,7 +78,7 @@ const Membership = () => {
                             <h2>ADULT</h2>
 
                             <div className='price'>
-                                <h3>$30</h3> 
+                                <h3>$30.99</h3> 
                                 <h4>/month</h4>
                             </div>
 
@@ -98,16 +98,17 @@ const Membership = () => {
                             <h2>SENIOR</h2>
 
                             <div className='price'>
-                                <h3>$25</h3> 
+                                <h3>$20.99</h3> 
                                 <h4>/month</h4>
                             </div>
 
                             <p>Must 65+ years young</p>
                         </CardContent>
                         <CardActions>
-                            <Button variant="contained" color="success">
-                            BUY
-                            </Button>
+                                <Button variant="contained" color="success">
+                                BUY
+                                </Button>
+                            
                         </CardActions>
                     </Card>
                 </div>

@@ -9,6 +9,9 @@ import Membership from './pages/membership.js'
 import ProgramsLessons from './pages/programsLessons.js'
 import Account from './pages/account.js'
 
+import Success from './pages/payments/success.js'
+import Failure from './pages/payments/failure.js'
+
 function App() {
   return (
     <div className="App">
@@ -44,6 +47,16 @@ function App() {
             <Route
               path="/account"
               element={<Account/>}
+            />
+
+            <Route
+              path="/success"
+              element={<Success/>}
+            />
+
+            <Route
+              path="/failure"
+              element={<Failure/>}
             />
 
           </Routes>
